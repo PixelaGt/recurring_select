@@ -96,7 +96,7 @@ module RecurringSelectHelper
     end
   end
 
-  if Rails::VERSION::STRING.to_f >= 4.0
+  if Rails::VERSION::STRING.to_f >= 4.0 || Rails::VERSION::STRING.to_f >= 5.0
     # === Rails 4
     class RecurringSelectTag < ActionView::Helpers::Tags::Base
       include RecurringSelectHelper::FormOptionsHelper
